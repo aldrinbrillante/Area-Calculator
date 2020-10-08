@@ -32,6 +32,24 @@
         <!-- action for 'calculate button' when user submits -->
         <!-- form tag below calls 2 functions: calculateArea() and updateForm() -->
         <form action="javascript:calculateArea()" onchange="javascript:updateForm()"></form>
+        <label for="id_shapes">Select a shape</label>
+        <!-- select element to create a drop down list  -->
+        <select id="id_shapes">
+            <!-- 'selected' indicates the option that is initially selected; the default selection -->
+            <option value="circle" selected>(Select a Shape)</option>
+            <option value="circle">Circle</option>
+            <option value="triangle">Triangle</option>
+            <option value="square">Square</option>
+            <option value="rectangle">Rectangle</option>
+        </select>
+
+        <!-- add some space -->
+        <br><br>
+
+        <!-- now, we need to handle the inputs for each of these shapes -->
+        <!-- A div / section can be used to do this -->
+
+
 
 
 
