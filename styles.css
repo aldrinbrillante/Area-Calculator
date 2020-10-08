@@ -1,0 +1,15 @@
+/* body style */
+body  {
+    /* image used is from shutterstock */
+    background-image: url("math-bg.jpg");
+    background-color: #cccccc;
+  }
+
+/* h1 style */
+h1 {
+    font-size: 30px;
+    font-family: URW Chancery L, cursive;
+    padding: 10px;
+    border: 10px solid rgb(0, 0, 0);
+    border-style: outset;
+}
