@@ -11,7 +11,28 @@ h1 {
     font-family: URW Chancery L, cursive;
     padding: 10px;
     border: 10px solid rgb(0, 0, 0);
+    width: 500px;
     border-style: outset;
-    display: flex;
-    flex-direction: column;
 }
+
+/* paragraph style for: 'Information' */
+p {
+    font-size: 15px;
+    font-family: Chalkduster, fantasy;
+    margin: 50px;
+}
+
+/* label styles for 'select a shape, radius */
+label {
+    font-size: 20px;
+    margin: 50px;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 50px;
+}
+
+
+
+
