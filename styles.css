@@ -13,6 +13,8 @@ h1 {
     border: 10px solid rgb(0, 0, 0);
     width: 500px;
     border-style: outset;
+    margin: 10px;
+
 }
 
 /* paragraph style for: 'Information' */
@@ -32,6 +34,13 @@ label {
 h2 {
     font-size: 50px;
     margin: 50px;
+}
+
+/* output style for the result after pressing "calculate area"  */
+#id_output {
+    font-family: Gill Sans, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
 }
 
 

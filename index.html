@@ -27,88 +27,108 @@
                 finding the area of 4 geometric shapes: <br> <br>
                 Circle | Triangle | Square | Rectangle<br> <br>
                 Area Formulas will be shown depending on user's choice. <br>
-                Input for shape(s) is drop down options. <br>
-                Input for side is type number. <br>
+                Input information needed, then press "Calculate Area" <br>
+                Answer will appear below. <br>
             </p>
 
             <!-- Form tag is used to collect user input-->
             <!-- action for 'calculate button' when user submits -->
             <!-- form tag below calls 2 functions: calculateArea() and updateForm() -->
-            <form action="javascript:calculateArea()" onchange="javascript:updateForm()"></form>
-            <label for="id_shapes">Select a shape</label>
-            <!-- select element to create a drop down list  -->
-            <select id="id_shapes">
-                <!-- 'selected' indicates the option that is initially selected; the default selection -->
-                <option value="circle" selected>(Select a Shape)</option>
-                <option value="circle">Circle</option>
-                <option value="triangle">Triangle</option>
-                <option value="square">Square</option>
-                <option value="rectangle">Rectangle</option>
-            </select>
+            <form action="javascript:calculateArea()" onchange="javascript:updateForm()">
 
-            <!-- add some space -->
-            <br><br>
+                <label for="id_shapes">Select a shape</label>
+                <!-- select element to create a drop down list  -->
+                <select id="id_shapes">
+                    <!-- 'selected' indicates the option that is initially selected; the default selection -->
+                    <option value="select" selected>(Select)</option>
+                    <option value="circle">Circle</option>
+                    <option value="triangle">Triangle</option>
+                    <option value="square">Square</option>
+                    <option value="rectangle">Rectangle</option>
+                </select>
 
-            <!-- now, we need to handle the inputs for each of these shapes -->
-            <!-- A div / section can be used to handle this -->
+                <!-- add some space -->
+                <br><br>
 
-            <!-- div info for circle -->
-            <div id="id_inputs_circle">
-                <!-- label for input: circle -->
-                <label for="id_radius">Radius</label>
-                <!-- input tag to specify where user can enter data -->
-                <!-- type=number to add the arrow keys; min=0 so no negative shape length; step allows user to input decimals  -->
-                <input id="id_radius" type="number" min="0" step="any">
-                <!-- visual formula for circle -->
-                <h1>Formula for Circle:</h1>
-                <h2><em>A = &Pi;r<sup>2</sup></em></h2>
-            </div>
+                <!-- now, we need to handle the inputs for each of these shapes -->
+                <!-- A div / section can be used to handle this -->
 
-            <!-- div info for triangle -->
-            <!-- hidden attribute to hide element for now -->
-            <div id="id_inputs_triangle" hidden>
-                <label for="id_base">Base</label>
-                <input id="id_base" type="number" min="0" step="any">
-                <label for="id_height">Height</label>
-                <input id="id_height" type="number" min="0" step="any">
-                <!-- visual formula for triangle -->
-                <h1>Formula for Triangle:</h1>
-                <h2><em>A = <sup>bh</sup>&frasl;<sub>2</sub></em></h2>
-            </div>
 
-            <!-- div info for square -->
-            <!-- hidden attribute to hide element for now -->
-            <div id="id_inputs_square" hidden>
-                <label for="id_side">Side</label>
-                <input id="id_side" type="number" min="0" step="any">
-                <!-- visual formula for square -->
-                <h1>Formula for Square:</h1>
-                <h2><em>A = s<sup>2</sup></em></h2>
-            </div>
+                <!-- div info for (Select) -->
+                <div id="id_inputs_select">
+                    <!-- label for input: select -->
+                    <!-- visual formula for (select) -->
+                    <h1>Formula for (Select):</h1>
+                    <h2><em>N/a; Select a shape above</em></h2>
+                </div>
 
-            <!-- div info for rectangle -->
-            <!-- hidden attribute to hide element for now -->
-            <div id="id_inputs_rectangle" hidden>
-                <label for="id_length">Length</label>
-                <input id="id_length" type="number" min="0" step="any">
-                <label for="id_width">Width</label>
-                <input id="id_width" type="number" min="0" step="any">
-                <!-- visual formula for rectangle -->
-                <h1>Formula for Rectangle:</h1>
-                <h2><em>A = lw</em></h2>
-            </div>
+                <!-- div info for circle -->
+                <!-- hidden attribute to hide element for now -->
+                <div id="id_inputs_circle" hidden>
+                    <!-- label for input: circle -->
+                    <label for="id_radius">Radius</label>
+                    <!-- input tag to specify where user can enter data -->
+                    <!-- type=number to add the arrow keys; min=0 so no negative shape length; step allows user to input decimals  -->
+                    <input id="id_radius" type="number" min="0" step="any">
+                    <!-- visual formula for circle -->
+                    <h1>Formula for Circle:</h1>
+                    <h2><em>A = &Pi;r<sup>2</sup></em></h2>
+                </div>
 
-            <!-- now, we need our submit botton  -->
-            <input type="submit" value="Calculate Area">
-            <!-- id for disaplyed output of the area; id so it can be referred  in javascript -->
-            <p id="id_output"></p>
+                <!-- div info for triangle -->
+                <!-- hidden attribute to hide element for now -->
+                <div id="id_inputs_triangle" hidden>
+                    <label for="id_base">Base</label>
+                    <input id="id_base" type="number" min="0" step="any">
+                    <label for="id_height">Height</label>
+                    <input id="id_height" type="number" min="0" step="any">
+                    <!-- visual formula for triangle -->
+                    <h1>Formula for Triangle:</h1>
+                    <h2><em>A = <sup>bh</sup>&frasl;<sub>2</sub></em></h2>
+                </div>
 
+                <!-- div info for square -->
+                <!-- hidden attribute to hide element for now -->
+                <div id="id_inputs_square" hidden>
+                    <label for="id_side">Side</label>
+                    <input id="id_side" type="number" min="0" step="any">
+                    <!-- visual formula for square -->
+                    <h1>Formula for Square:</h1>
+                    <h2><em>A = s<sup>2</sup></em></h2>
+                </div>
+
+                <!-- div info for rectangle -->
+                <!-- hidden attribute to hide element for now -->
+                <div id="id_inputs_rectangle" hidden>
+                    <label for="id_length">Length</label>
+                    <input id="id_length" type="number" min="0" step="any">
+                    <label for="id_width">Width</label>
+                    <input id="id_width" type="number" min="0" step="any">
+                    <!-- visual formula for rectangle -->
+                    <h1>Formula for Rectangle:</h1>
+                    <h2><em>A = lw</em></h2>
+                </div>
+
+                <!-- now, we need our submit botton  -->
+                <input type="submit" value="Calculate Area">
+                <!-- id for disaplyed output of the area; id so it can be referred  in javascript -->
+                <p id="id_output"></p>
+            
+            <!-- end of form tag -->
+            </form>
+        <!-- end of main tag -->
         </main>
+    <!-- end of body tag -->
     </body>
 
+    <!-- footer -->
     <footer> 
         <br><br><br><br><br><br><br><br><br><br>
-        <p>@ Aldrin Brillante</p>
+        <p>
+            @ Aldrin Brillante
+            <br>
+            Make School Fall 2020 Web 1.0
+        </p>
     </footer>
 
 </html>
