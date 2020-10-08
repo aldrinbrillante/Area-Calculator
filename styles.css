@@ -5,11 +5,13 @@ body  {
     background-color: #cccccc;
   }
 
-/* h1 style */
+/* h1 style; titles */
 h1 {
     font-size: 30px;
     font-family: URW Chancery L, cursive;
     padding: 10px;
     border: 10px solid rgb(0, 0, 0);
     border-style: outset;
+    display: flex;
+    flex-direction: column;
 }
