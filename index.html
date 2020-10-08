@@ -21,6 +21,7 @@
     <main>
         <h1>Area Calculator</h1>
         <p>
+            Information: <br><br>
             This Custom Calculator results in calculating the area of 4 geometric shapes. <br>
             Calculator Dropdown has 4 shapes: Circle, Triangle, Square, Rectangle. <br>
             Area Formulas will be showns dependent on user's choice. <br>
@@ -47,7 +48,53 @@
         <br><br>
 
         <!-- now, we need to handle the inputs for each of these shapes -->
-        <!-- A div / section can be used to do this -->
+        <!-- A div / section can be used to handle this -->
+
+        <!-- div for circle -->
+        <div id="id_inputs_circle">
+            <!-- label for input: circle -->
+            <label for="id_radius">Radius</label>
+            <!-- input tag to specify where user can enter data -->
+            <!-- type=number to add the arrow keys; min=0 so no negative shape length; step allows user to input decimals  -->
+            <input id="id_radius" type="number" min="0" step="any">
+            <!-- visual formula for circle -->
+            <h1>Formula for Circle:</h1>
+            <h2><em>A = &Pi;r<sup>2</sup></em></h2>
+        </div>
+
+        <!-- div for triangle -->
+        <!-- hidden attribute to hide element for now -->
+        <div id="id_inputs_triangle" hidden>
+            <label for="id_base">Base</label>
+            <input id="id_base" type="number" min="0" step="any">
+            <label for="id_height">Height</label>
+            <input id="id_height" type="number" min="0" step="any">
+            <!-- visual formula for triangle -->
+            <h1>Formula for Triangle:</h1>
+            <h2><em>A = <sup>bh</sup>&frasl;<sub>2</sub></em></h2>
+        </div>
+
+        <!-- div for square -->
+        <!-- hidden attribute to hide element for now -->
+        <div id="id_inputs_square" hidden>
+            <label for="id_side">Side</label>
+            <input id="id_side" type="number" min="0" step="any">
+            <!-- visual formula for square -->
+            <h1>Formula for Square:</h1>
+            <h2><em>A = s<sup>2</sup></em></h2>
+        </div>
+
+        <!-- div for rectangle -->
+        <!-- hidden attribute to hide element for now -->
+        <div id="id_inputs_rectangle" hidden>
+            <label for="id_length">Length</label>
+            <input id="id_length" type="number" min="0" step="any">
+            <label for="id_width">Width</label>
+            <input id="id_width" type="number" min="0" step="any">
+            <!-- visual formula for rectangle -->
+            <h1>Formula for Rectangle:</h1>
+            <h2><em>A = lw</em></h2>
+        </div>
 
 
 
